@@ -1,0 +1,65 @@
+body {
+    background-color:#556B2F;
+}
+
+
+#liste {
+    color:#808080;
+}
+
+#liste01 {
+    background-color:#551A8B;
+}
+
+#doorbells {
+    padding-left: 100px;
+}
+
+#sleighbells {
+    padding-left: 400px;
+}
+
+#schnitzel {
+    padding-left: 75px;
+}
+
+
+
+
+.tabellinfo {
+   border:4px solid darkgray;
+    background-color:gray;
+        
+}
+
+th {
+    border: 2px dashed brown;
+    background-color:burlywood;
+}
+
+td {
+    border:2px dotted darkgray;
+}
+.meter {
+    text-align: center;
+}
+
+#gold {
+    background-color:gold;
+    text-align: center;
+}
+#silver {
+    background-color: silver;
+    text-align: center;
+}
+#bronze {
+    background-color:saddlebrown;
+    text-align: center;
+}
+#fourth {
+    text-align: center;
+}
+
+.land {
+    text-align: right;
+}

@@ -1,0 +1,37 @@
+body {
+	padding-top:70px;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.thumbnail img {
+	border-radius: 5px;
+	border:1px solid rgba(60,60,60,0.1);
+}
+.thumbnail img:hover {
+	opacity: 0.5;
+}
+
+.container .jumbotron {
+	color: #183c37;
+	background: rgba(119,136,153,0.1);
+	padding:2%;
+}
+
+.navbar-inverse {
+	background: #183c37;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	background: rgba(255,255,255,0.1);
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.currentlyActive {
+	background: rgba(255,255,255,0.1);	
+}
+

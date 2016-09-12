@@ -1,0 +1,37 @@
+body {
+	background: lightblue;
+}
+
+table {
+	border: 2px solid orange;
+	background: gray;
+	margin: 50px;
+}
+
+td {
+	border: 2px solid black;
+}
+td:nth-child(3) {
+	background: yellow;
+}
+
+td:nth-child(even) {
+	background: purple;
+	border-top: 7px dotted black;
+}
+
+th {
+	background: pink;
+	border-bottom: 4px solid blue;
+}
+
+th {
+	text-transform: uppercase;
+	color: green;
+}
+
+.ukjent {
+	background: red;
+	color: white;
+	border-radius: 10px;
+}
