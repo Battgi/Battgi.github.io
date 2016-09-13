@@ -9,6 +9,7 @@ body {
 	border-radius: 5px;
 	border:1px solid rgba(60,60,60,0.1);
 	max-height: 340px;
+	min-width: 200px;
 }
 .thumbnail img:hover {
 	opacity: 0.5;
