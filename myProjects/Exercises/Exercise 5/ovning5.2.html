@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<title>Formulær</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="ovning5.1.css">
+
+	<style type="text/css">
+		html {
+			text-align: center;
+		}
+
+		textarea {
+			max-width: 500px;
+			width: 400px;
+		}
+
+		label, input, button, select, textarea {
+			border: 1px solid black;
+			border-radius: 5px;
+			padding: 0.2%;
+			background: lightgray;
+		}
+
+		button {
+			width: 150px;
+			height: 40px;
+		}
+		button:hover {
+			background: black;
+			color: white;
+		}
+
+		li {
+			margin-right: 40px;
+		}
+	</style>
+
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li><a href="#">Hjem</a></li>
+		<li><a href="#">Om meg</a></li>
+		<li><a href="#">Kontaktinformasjon</a></li>
+	</ul>
+</nav>
+
+
+<form>
+	<label for="fornavn">Fornavn:</label>
+	<input type="text" id="fornavn" name="fornavn" required="">
+
+	<label for="etternavn">Etternavn:</label>
+	<input type="text" id="etternavn" name="etternavn" required="">
+	<br><br>
+	<select>
+		<option value="Øvning">Radio</option>
+		<option value="Øvning2">Datamaskin</option>
+		<option value="Øvning3">Telefon</option>
+	</select>
+	<br><br>
+	<textarea></textarea>
+	<br><br>
+	<button>Kjør!</button>
+
+</form>
+
+</body>
+</html>
