@@ -1,0 +1,36 @@
+
+    #main {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        text-align: center;
+        min-height: 80%;
+    }
+ 
+    #main > article {
+        padding: 5px;
+        background: tomato;
+        flex: 60%;
+        order: 2;
+    }
+
+    #main > nav {
+        padding: 5px;
+        background: orange;
+        flex: 20%;
+        order: 1;
+    }
+  
+    #main > aside {
+        padding: 5px;
+        background: orange;
+        flex: 20%;
+        order: 3;
+    }
+ 
+    header, footer {
+        display: block;
+        padding: 5px;
+        min-height: 100px;
+        background: yellowgreen;
+    }
