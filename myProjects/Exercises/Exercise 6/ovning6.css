@@ -1,0 +1,22 @@
+body {
+	width: 70%;
+	margin: 0 auto;
+}
+
+img {
+	float:left;
+	margin: 0 0 10px 10px;
+	padding-right: 2%;
+}
+div {
+	clear:left;
+}
+
+p {
+	line-height: 2em;
+}
+
+p::first-letter {
+	font-size: 100px;
+	color: gold;
+}
