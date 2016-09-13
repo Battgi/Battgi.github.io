@@ -3,14 +3,12 @@ body {
 	font-family: 'Varela Round', sans-serif;
 }
 
-img {
-	width: 500px;
-	height: 300px;
-}
+
 
 .thumbnail img {
 	border-radius: 5px;
 	border:1px solid rgba(60,60,60,0.1);
+	max-height: 340px;
 }
 .thumbnail img:hover {
 	opacity: 0.5;
