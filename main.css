@@ -3,7 +3,11 @@ body {
 	font-family: 'Varela Round', sans-serif;
 }
 
-
+.thumbnail{        
+    width: 300px; 
+    height: 500px;
+    overflow: auto;
+}
 
 .thumbnail img {
 	border-radius: 5px;
