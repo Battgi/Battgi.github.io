@@ -1,0 +1,108 @@
+body {
+	background: lightblue;
+	font-size: 30px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+.container {
+	margin-top: 2%;
+	display: flex;
+	flex-flow: row;
+}
+
+.container > .nav {
+	flex: 20%;
+	background: red;
+	order: 1;
+	height: 50px;
+}
+
+.container > .content {
+	flex:60%;
+	background: blue;
+	order: 2;
+	height: 50px;
+}
+
+.container > .aside {
+	flex: 20%;
+	background: pink;
+	order: 3;
+	height: 50px;
+}
+
+.box1 {
+	height: 200px;
+	margin-top: 2%;
+}
+
+.color1, .color2, .color3, .color4, .color5 {
+	color: black;
+	display: inline;
+	display: none;
+	text-align: center;
+	text-shadow: 1px 1px black;
+	margin-top: 2%;
+
+}
+
+@media (min-width: 600px) and (max-width: 1050px) {
+	.container {
+		flex-flow:column;
+	}
+}
+
+@media (max-width: 600px) {
+	.box1 {
+		background: white;
+	}
+	.color1 {
+		display: block;
+		color: white;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 751px) {
+	.box1 {
+		background: yellowgreen;
+	}
+	.color2 {
+		display: block;
+		color: yellowgreen;
+	}
+}
+
+@media (min-width: 752px) and (max-width: 902px) {
+	.box1 {
+		background: gray;
+	}
+	.color3 {
+		display: block;
+		color: gray;
+	}
+}
+
+@media (min-width: 903px) and (max-width: 1053px) {
+	.box1 {
+		background: yellow;
+	}
+	.color4 {
+		display: block;
+		color: yellow;
+	}
+}
+
+@media (min-width: 1054px) {
+	.box1 {
+		background: orange;
+	}
+	.color5 {
+		display: block;
+		color: orange;
+	}
+}
+
+
+
