@@ -65,11 +65,3 @@ hr {
 }
 
 
-
-@media (max-width: 600px) {
-	.hide {
-		display: none;
-	}
-
-
-}
