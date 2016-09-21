@@ -1,0 +1,39 @@
+body, html {
+  height: 100%;
+  margin:0 auto;
+  background: #4d0f00;
+}
+
+
+
+.bg1, .bg2, .bg3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+}
+.bg1 {
+  background-image: url("main.jpg");
+  min-height: 100%;
+}
+
+.bg2 {
+  background-image: url("second.jpg");
+  min-height: 55%;
+}
+
+.bg3 {
+  background-image: url("third.jpg");
+  min-height: 60%;
+}
+
+.mainContent {
+	height: 40%;
+}
+
+.content {
+	min-height:30%;
+}
+
