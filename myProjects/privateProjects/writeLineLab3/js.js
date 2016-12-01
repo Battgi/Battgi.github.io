@@ -22,6 +22,7 @@ let canvas = document.getElementById('canvas'),
     clearCanvasButton = document.getElementsByClassName('clearCanvasButton'),
     cancelDrawingButton = document.getElementsByClassName('cancelDrawingButton'),
     triforce = document.getElementById('triforce'),
+    imageObj = new Image(),
     addColorButton = document.getElementById('submitColor'),
     userColor = document.getElementById('userColor'),
     JSONExpButton = document.getElementById('JSONExpButton'),
@@ -44,6 +45,8 @@ let canvas = document.getElementById('canvas'),
 
 //testing 
 
+
+
 //lopped buttons because there is more than one
 for (let i = 0; i < 2; i++) {
     triangleButton[i].addEventListener('click', function (event) {
@@ -65,7 +68,7 @@ for (let i = 0; i < 2; i++) {
     });
     polygonButton[i].addEventListener('click', function (event) {
         info.textContent = 'Click x times to form a polygon. Then click "End polygon"';
-        if (polygonClicked === 0) { 
+        if (polygonClicked === 0) {
             //change button on click
             resetAll();
             userWantsToDrawPolygon = true;
@@ -73,7 +76,7 @@ for (let i = 0; i < 2; i++) {
             polygonClicked = 1;
             polygonButton[0].textContent = 'End polygon';
             polygonButton[1].textContent = 'End polygon';
-        } else { 
+        } else {
             //change button to default
             info.textContent = 'Polygon created';
             polygonClicked = 0;
@@ -145,7 +148,7 @@ canvas.addEventListener('click', function (event) {
     if (userWantsToDrawTriangle && myClicks <= 1) {
         info.textContent = 'Click three places to form a triangle'; //info given to user on screen
         myClicks++; //so it doesn't loop and can continue to drawing
-        currentPosistions.push(cord);//push the clicked cords to array
+        currentPosistions.push(cord); //push the clicked cords to array
         marker(); //marks points clicked
     } else if (userWantsToDrawTriangle && myClicks == 2) {
         info.textContent = 'Triangle created'; //info given to user on screen
@@ -158,7 +161,7 @@ canvas.addEventListener('click', function (event) {
     }
     //RECTANGLE//RECTANGLE//RECTANGLE//RECTANGLE//RECTANGLE//RECTANGLE
     else if (userWantsToDrawRectangle && myClicks == 0) {
-        info.textContent = 'Click two places to form a rectangle'; 
+        info.textContent = 'Click two places to form a rectangle';
         myClicks++;
         currentPosistions.push(cord);
         marker();
@@ -297,21 +300,21 @@ function importToCanvas() {
             drawFig();
             currentSavedFig = [];
             userWantsToDrawCircle = false;
-        //this checks if it is a rectangle
+            //this checks if it is a rectangle
         } else if (savedParsed[i].rx1 != undefined) {
             userWantsToDrawRectangle = true;
             currentSavedFig.push(savedParsed[i]);
             drawFig();
             currentSavedFig = [];
             userWantsToDrawRectangle = false;
-        //this checks if it is a triangle
+            //this checks if it is a triangle
         } else if (savedParsed[i].tx1 != undefined) {
             userWantsToDrawTriangle = true;
             currentSavedFig.push(savedParsed[i]);
             drawFig();
             currentSavedFig = [];
             userWantsToDrawTriangle = false;
-        //this is not optimal, but checks if it is a polygon
+            //this is not optimal, but checks if it is a polygon
         } else {
             if (polyTurn === 0) {
                 context.beginPath();
@@ -323,19 +326,19 @@ function importToCanvas() {
                 polyTurn++;
                 context.lineTo(savedParsed[i][0], savedParsed[i][1]);
                 context.stroke();
-            
+
             }
         }
-        
+
     }
     //This is not optimal, draws the last line in the polygon, but may draw unexpected lines if combined with other shapes(there is nothing that close.path)
-    if (polyStart != []){
+    if (polyStart != []) {
         context.lineTo(polyStart[0], polyStart[1]);
         context.stroke();
         polyTurn = [];
 
     }
-    
+
 }
 //change the drawing color, two options(one with timer, one with function calling) 
 function changeColor() {
@@ -514,6 +517,8 @@ function Circle(centerX, centerY, radius) {
 
 //super secret button that no one is supposed to notice
 triforce.addEventListener('click', function (event) {
+    let heylisten = document.getElementById('heylisten');
+    heylisten.play();
     info.innerHTML = '"Hey! Listen!"'
     context.beginPath();
     context.moveTo(0, 595);
@@ -532,4 +537,8 @@ triforce.addEventListener('click', function (event) {
     context.fillStyle = "#c0c0c0";
     context.fill();
     context.stroke();
+    imageObj.onload = function () {
+        context.drawImage(imageObj, 49, 30);
+    };
+    imageObj.src = "secret.png"
 });
