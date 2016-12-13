@@ -40,8 +40,13 @@
     </header>
     <main>
         <form action="https://formspree.io/joaoepe@outlook.com" method="POST" target="_blank">
+           <input type="email" name="_replyto" placeholder="epost@adresse.no">
             <input type="text" name="name" placeholder="Fornavn og etternavn">
-            <input type="email" name="_replyto" placeholder="epost@adresse.no">
+            <select name="about">
+                <option value="Alarm">Pepperkake</option>
+                <option value="Klage">Taco</option>
+                <option value="Fest">Salat</option>
+            </select>
             <textarea name="message" placeholder="Hva har du på tanken?"></textarea>
             <input type="submit" value="Send">
         </form>
