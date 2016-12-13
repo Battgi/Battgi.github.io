@@ -42,7 +42,7 @@ function toggleMenuButton() {
 
 function sendMail(){
     document.getElementById("mailForm").onclick = function() {
-    var wnd = window.open("https://formspree.io/joaoepe@outlook.com");
+    var wnd = window.open("https://formspree.io/thanks?next=https%3A%2F%2Fbattgi.github.io%2FmyProjects%2FprivateProjects%2Fsikkerhetinnlandet%2Findex.html");
     setTimeout(function() {
       wnd.close();
     }, 4000);
