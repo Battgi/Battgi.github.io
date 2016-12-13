@@ -14,7 +14,6 @@ function toggleMenuButton() {
         let sidenav = document.getElementById('mySidenav'),
             pushed = document.getElementsByClassName('pushMe'),
             brand = document.getElementsByClassName('brand')[0];
-
         toggle.addEventListener("click", function (e) {
             e.preventDefault();
             if (this.classList.contains("is-active") === true) {
@@ -32,7 +31,7 @@ function toggleMenuButton() {
                 sidenav.classList.remove('sidenavClosed');
                 sidenav.classList.add('sidenavOpen');
                 for (let i = 0; i < pushed.length; i++) {
-                    pushed[i].classList.add('pushed');    
+                    pushed[i].classList.add('pushed');
                 }
                 console.log("Sidenav: open");
             };

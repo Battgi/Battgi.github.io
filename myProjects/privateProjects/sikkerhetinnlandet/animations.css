@@ -1,7 +1,8 @@
 /*animation for burgermenu effect*/
 .menuButtonAnimation {
     display: block;
-    position: relative;
+    position: absolute;
+    right: 0;
     overflow: hidden;
     width: 5.4em;
     height: 5.4em;
@@ -25,7 +26,7 @@
     top: 2.11em;
     left: .945em;
     right: .945em;
-    height: 0.47em;
+    height: 0.42em;
     background: rgb(246, 52, 44);
     transition: background 0s 0.3s;
 }
@@ -38,7 +39,7 @@
     display: block;
     left: 0;
     width: 100%;
-    height: 0.47em;
+    height: 0.42em;
     background-color: rgb(246, 52, 44);
     content: "";
     transition-duration: 0.3s, 0.3s;
