@@ -1,5 +1,6 @@
 window.onload = function () {
     toggleMenuButton();
+    sendMail();
 }
 
 function toggleMenuButton() {
@@ -38,3 +39,13 @@ function toggleMenuButton() {
         });
     }
 };
+
+function sendMail(){
+    document.getElementById("mailForm").onclick = function() {
+    var wnd = window.open("https://formspree.io/joaoepe@outlook.com");
+    setTimeout(function() {
+      wnd.close();
+    }, 4000);
+    return false;
+  };
+}
