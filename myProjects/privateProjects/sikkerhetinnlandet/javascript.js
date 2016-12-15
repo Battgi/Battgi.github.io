@@ -11,11 +11,10 @@ function toggleMenuButton() {
         introduction = document.getElementById('introduction');
 
     toggle.addEventListener("click", function (e) {
-        e.preventDefault();
+        scroll(0, 0);
         this.classList.toggle("is-active");
         sidenav.classList.toggle('sidenavOpen');
         brand.classList.toggle('removeBrand');
         noScroll.classList.toggle('overflow');
-        scroll(0, 0);
     });
 };

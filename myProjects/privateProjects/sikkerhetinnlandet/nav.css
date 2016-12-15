@@ -42,6 +42,7 @@ button {
     -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -66,6 +67,8 @@ button {
     background-size: contain;
     background-repeat: no-repeat;
     height: 6em;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -107,3 +110,6 @@ button {
     padding: 1em;
 }
 
+.overflow {
+    overflow-y: hidden;
+}
