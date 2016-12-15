@@ -1,16 +1,19 @@
 /*animation for burgermenu effect*/
 .menuButtonAnimation {
     display: block;
-    position: absolute;
+    position: relative;
     right: 0;
     overflow: hidden;
     width: 5.4em;
     height: 5.4em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     box-shadow: none;
     border-radius: none;
     border: none;
     cursor: pointer;
+    -webkit-transition: background 0.3s;
     transition: background 0.3s;
     background-color: rgba(50, 50, 50, 0);
 }
@@ -28,6 +31,7 @@
     right: .945em;
     height: 0.42em;
     background: rgb(246, 52, 44);
+    -webkit-transition: background 0s 0.3s;
     transition: background 0s 0.3s;
 }
 
@@ -42,18 +46,24 @@
     height: 0.42em;
     background-color: rgb(246, 52, 44);
     content: "";
+    -webkit-transition-duration: 0.3s, 0.3s;
     transition-duration: 0.3s, 0.3s;
+    -webkit-transition-delay: 0.3s, 0s;
     transition-delay: 0.3s, 0s;
 }
 
 .menuButtonAnimation span::before {
-    top: -1.05em;
+    top: 1.05em;
     transition-property: top, transform;
+    -webkit-transition-property: top, -webkit-transform;
+    transition-property: top, -webkit-transform;
 }
 
 .menuButtonAnimation span::after {
-    bottom: -1.05em;
+    bottom: 1.05em;
     transition-property: bottom, transform;
+    -webkit-transition-property: bottom, -webkit-transform;
+    transition-property: bottom, -webkit-transform;
 }
 
 
@@ -69,15 +79,18 @@
 
 .menuButtonAnimation.is-active span::before {
     top: 0;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .menuButtonAnimation.is-active span::after {
     bottom: 0;
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
 .menuButtonAnimation.is-active span::before,
 .menuButtonAnimation.is-active span::after {
+    -webkit-transition-delay: 0s, 0.3s;
     transition-delay: 0s, 0.3s;
 }

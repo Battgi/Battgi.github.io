@@ -3,8 +3,14 @@
     margin: 0;
 }
 
+html {
+    max-width: 100%;
+}
+
 body {
     font-size: 62.5%;
+    min-width: 262px;
+    width: 100%;
 }
 
 li {
@@ -13,16 +19,18 @@ li {
 
 a {
     text-decoration: none;
+    font-weight: 900;
 }
 
 button {
     outline: none;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 #mySidenav .currentlyActive {
-    color: rgb(242,51,43);
+    color: rgb(242, 51, 43);
 }
 
 .displayFlexHeader,
@@ -34,6 +42,7 @@ button {
     -ms-flex-line-pack: center;
     align-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 
@@ -66,7 +75,6 @@ button {
 }
 
 
-
 /*side nav*/
 
 .sidenav {
@@ -75,7 +83,7 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #eee;
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -87,7 +95,6 @@ button {
     color: black;
     font-weight: 900;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     display: block;
     font-size: 2.3em;
     -webkit-transition: 0.3s;
@@ -95,23 +102,10 @@ button {
 }
 
 .sidenavOpen {
-    width: 22em;
+    width: 70%;
     padding: 1em;
 }
 
-.sidenavClosed {
-    width: 0;
+.overflow {
+    overflow: hidden;
 }
-
-.pushMe {
-    top: 0;
-    left: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    
-}
-
-.pushed {
-    margin-left: 22em;
-}
-

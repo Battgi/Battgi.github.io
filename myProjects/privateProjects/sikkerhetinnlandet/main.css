@@ -1,0 +1,143 @@
+main {
+    background-color: rgb(60, 60, 60);
+}
+
+.displayFlexMain .contactUsButton {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: red;
+    font-size: 2em;
+    padding: 0.4em;
+    margin: 1em 2em 1em 2em;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+.displayFlexMain .contactUsButton a {
+    color: white;
+    letter-spacing: 0.2em;
+    text-shadow: 1px 1px 2px rgb(50, 50, 50);
+}
+
+.displayFlexMain #errand {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: white;
+    background-color: rgb(100, 100, 100);
+    font-size: 4em;
+    text-shadow: 1px 1px black;
+    padding: 1em;
+}
+
+#containerOne,
+#containerTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+#containerOne li,
+#containerTwo li {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: table;
+}
+
+#containerOne li {
+    width: 100%;
+}
+
+#containerTwo li {
+    width: 100%;
+}
+
+#containerOne li:nth-of-type(1) {
+    height: 16em;
+    background-image: url(pictures/background/bedrift.jpg);
+    background-color: lightyellow;
+}
+
+#containerOne li:nth-of-type(2) {
+    height: 24em;
+    background-image: url(pictures/background/surveillance.jpg);
+    background-color: #eee;
+}
+
+#containerOne li:nth-of-type(3) {
+    height: 22em;
+    background-image: url(pictures/background/stengsel.jpg);
+    background-color: ivory;
+}
+
+#containerTwo li:nth-of-type(1) {
+    height: 22em;
+    background-image: url(pictures/background/bolig.jpg);
+    background-position: right;
+    background-color: coral;
+}
+
+#containerTwo li:nth-of-type(2) {
+    height: 24em;
+    background-image: url(pictures/background/adgang.jpg);
+    background-color: cornflowerblue;
+}
+
+#containerTwo li:nth-of-type(3) {
+    height: 16em;
+    background-image: url(pictures/background/service.jpg);
+    background-color: aqua;
+}
+
+#containerOne li a,
+#containerTwo li a {
+    color: rgb(233, 233, 233);
+    text-shadow: 1px 1px 1px rgb(10,10,10), -1px -1px 2px rgb(10,10,10);
+    font-size: 1.8em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+/*smaller phones*/
+
+@media (max-width: 325px) {
+    #containerOne li:nth-of-type(1) {
+        height: 10em;
+    }
+    #containerOne li:nth-of-type(2) {
+        height: 18em;
+    }
+    #containerOne li:nth-of-type(3) {
+        height: 14em;
+    }
+    #containerTwo li:nth-of-type(1) {
+        height: 14em;
+    }
+    #containerTwo li:nth-of-type(2) {
+        height: 18em;
+    }
+    #containerTwo li:nth-of-type(3) {
+        height: 10em;
+    }
+    .displayFlexMain #errand {
+        font-size: 3em;
+    }
+    #containerOne li a,
+    #containerTwo li a {
+        font-size: 1.4em;
+    }
+}
+
+
+/*end smaller phones*/
