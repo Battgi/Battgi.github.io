@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 main {
     background-color: rgb(60, 60, 60);
 }
@@ -18,7 +17,7 @@ main {
 
 .displayFlexMain .contactUsButton a {
     color: white;
-    text-shadow: 1px 1px 1px rgb(10,10,10), -1px -1px 1px rgb(10,10,10);
+    text-shadow: 1px 1px 1px rgb(10, 10, 10), -1px -1px 1px rgb(10, 10, 10);
 }
 
 .displayFlexMain #errand {
@@ -37,8 +36,9 @@ section.displayFlexMain {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
 #containerOne,
 #containerTwo {
     display: -webkit-box;
@@ -71,55 +71,63 @@ section.displayFlexMain {
     align-items: center;
 }
 
-
 #containerOne li:nth-of-type(1) {
     background-image: url(pictures/background/bolig.jpg);
 }
-#containerOne li:nth-of-type(1) a{
+
+#containerOne li:nth-of-type(1) a {
     color: navajowhite;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10), -1px -1px 2px rgb(10, 10, 10);
 }
 
 #containerOne li:nth-of-type(2) {
     background-image: url(pictures/background/bedrift.jpg);
-
 }
-#containerOne li:nth-of-type(2) a{
-    color: antiquewhite;
 
+#containerOne li:nth-of-type(2) a {
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10), -1px -1px 2px rgb(10, 10, 10);
 }
 
 #containerOne li:nth-of-type(3) {
     background-image: url(pictures/background/surveillance.jpg);
 }
-#containerOne li:nth-of-type(3) a{
+
+#containerOne li:nth-of-type(3) a {
     color: wheat;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10), -1px -1px 2px rgb(10, 10, 10);
 }
 
 #containerTwo li:nth-of-type(1) {
     background-image: url(pictures/background/yale.jpg);
 }
-#containerTwo li:nth-of-type(1) a{
-    color: blanchedalmond;
+
+#containerTwo li:nth-of-type(1) a {
+    color: rgb(90, 90, 90);
+    text-shadow: 1px 1px rgb(50, 50, 50), 2px 2px rgb(50, 50, 50);
 }
 
 #containerTwo li:nth-of-type(2) {
     background-image: url(pictures/background/stengsel.jpg);
 }
-#containerTwo li:nth-of-type(2) a{
+
+#containerTwo li:nth-of-type(2) a {
     color: beige;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10), -1px -1px 2px rgb(10, 10, 10);
 }
 
 #containerTwo li:nth-of-type(3) {
     background-image: url(pictures/background/service.jpg);
 }
-#containerTwo li:nth-of-type(3) a{
+
+#containerTwo li:nth-of-type(3) a {
     color: navajowhite;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10), -1px -1px 2px rgb(10, 10, 10);
 }
 
 #containerOne li a,
 #containerTwo li a {
-    text-shadow: 1px 1px 1px rgb(10,10,10), -1px -1px 2px rgb(10,10,10);
-    font-size: 2.8em;
+    font-size: 2.5em;
     width: 100%;
-    padding: 25% 0 25% 0;
+    padding: 3.33em 0 3.33em 0;
 }
