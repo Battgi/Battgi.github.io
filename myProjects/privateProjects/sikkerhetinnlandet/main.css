@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
+
 main {
     background-color: rgb(60, 60, 60);
 }
@@ -16,8 +18,7 @@ main {
 
 .displayFlexMain .contactUsButton a {
     color: white;
-    letter-spacing: 0.2em;
-    text-shadow: 1px 1px 2px rgb(50, 50, 50);
+    text-shadow: 1px 1px 1px rgb(10,10,10), -1px -1px 1px rgb(10,10,10);
 }
 
 .displayFlexMain #errand {
@@ -32,7 +33,11 @@ main {
 }
 
 section.displayFlexMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
 }
 #containerOne,
 #containerTwo {
@@ -70,34 +75,51 @@ section.displayFlexMain {
 #containerOne li:nth-of-type(1) {
     background-image: url(pictures/background/bolig.jpg);
 }
+#containerOne li:nth-of-type(1) a{
+    color: navajowhite;
+}
 
 #containerOne li:nth-of-type(2) {
     background-image: url(pictures/background/bedrift.jpg);
+
+}
+#containerOne li:nth-of-type(2) a{
+    color: antiquewhite;
 
 }
 
 #containerOne li:nth-of-type(3) {
     background-image: url(pictures/background/surveillance.jpg);
 }
+#containerOne li:nth-of-type(3) a{
+    color: wheat;
+}
 
 #containerTwo li:nth-of-type(1) {
     background-image: url(pictures/background/yale.jpg);
+}
+#containerTwo li:nth-of-type(1) a{
+    color: blanchedalmond;
 }
 
 #containerTwo li:nth-of-type(2) {
     background-image: url(pictures/background/stengsel.jpg);
 }
+#containerTwo li:nth-of-type(2) a{
+    color: beige;
+}
 
 #containerTwo li:nth-of-type(3) {
     background-image: url(pictures/background/service.jpg);
 }
+#containerTwo li:nth-of-type(3) a{
+    color: navajowhite;
+}
 
 #containerOne li a,
 #containerTwo li a {
-    color: rgb(233, 233, 233);
     text-shadow: 1px 1px 1px rgb(10,10,10), -1px -1px 2px rgb(10,10,10);
     font-size: 2.8em;
     width: 100%;
     padding: 25% 0 25% 0;
-    
 }
