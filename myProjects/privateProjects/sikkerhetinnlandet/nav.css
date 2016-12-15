@@ -45,9 +45,6 @@ button {
     flex-wrap: wrap;
     width: 100%;
 }
-.displayFlexMain {
-    flex-direction: column;
-}
 
 
 /*introduction*/
