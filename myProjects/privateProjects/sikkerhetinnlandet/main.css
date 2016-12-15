@@ -17,7 +17,8 @@ main {
 
 .displayFlexMain .contactUsButton a {
     color: white;
-    text-shadow: 1px 1px 1px rgb(10, 10, 10), -1px -1px 1px rgb(10, 10, 10);
+    text-shadow: 1px 1px 2px rgb(10, 10, 10), -1px -1px 2px rgb(10, 10, 10);
+    letter-spacing: 0.1em;
 }
 
 .displayFlexMain #errand {
