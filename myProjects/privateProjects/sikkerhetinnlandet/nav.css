@@ -111,5 +111,6 @@ button {
 }
 
 .overflow {
-    overflow-y: hidden;
+    position: relative;
+    overflow: hidden;
 }
