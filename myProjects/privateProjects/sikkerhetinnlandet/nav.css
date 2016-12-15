@@ -43,6 +43,7 @@ button {
     align-content: center;
     text-align: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 .displayFlexMain {
     flex-direction: column;
@@ -87,6 +88,7 @@ button {
     top: 0;
     left: 0;
     background-color: #eee;
+    overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding: 0;
