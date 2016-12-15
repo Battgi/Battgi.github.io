@@ -8,8 +8,6 @@ main {
     flex: 1;
     background-color: red;
     font-size: 2em;
-    padding: 0.4em;
-    margin: 1em 2em 1em 2em;
     cursor: pointer;
     border-radius: 0.5em;
 }
