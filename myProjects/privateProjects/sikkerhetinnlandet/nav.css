@@ -114,3 +114,8 @@ button {
     position: fixed;
     overflow: hidden;
 }
+
+
+/*DESKTOP*/
+
+@media (min-width: 501px) {}
