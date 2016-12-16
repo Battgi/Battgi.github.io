@@ -3,12 +3,16 @@ footer {
 }
 
 .displayFlexFooter {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
 
 .displayFlexFooter li{
+    -ms-flex-preferred-size: 48%;
     flex-basis: 48%;
     margin: 0 0.5% 0 0.5%;
     background-size: contain;
