@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
 </head>
+
 <body class="noScroll">
     <header>
         <div>
@@ -29,15 +30,15 @@
                     <a href="#" class="desktopView">Kontakt</a>
                     <a href="#" class="desktopView">Om oss</a>
                     <a href="#" class="desktopView">Jobb</a>
-                    
+
                     <button id="showMenuButton" class="menuButtonAnimation  mobileView">
                         <span></span>
                     </button>
-                   
+
                 </nav>
-                 <div class="introDisc">
-                     <p>Alarm &#183; Kameraovervåkning &#183; Adgangskontroll &#183; Områdesikring </p>
-                 </div>
+                <div class="introDisc">
+                    <p>Alarm &#183; Kameraovervåkning &#183; Adgangskontroll &#183; Områdesikring </p>
+                </div>
             </div>
         </div>
         <nav id="mySidenav" class="sidenav mobileView">
@@ -55,16 +56,29 @@
     </header>
     <main>
         <div class="displayFlexMain">
-            <nav class="contactUsButton">
+            <nav class="contactUsButton mobileView">
                 <a href="#123">KONTAKT OSS</a>
             </nav>
+            <form method="POST" id="contactForm" class="desktopView">
+                <input type="email" name="_replyto" placeholder="epost@adresse.no" required>
+                <input type="text" name="name" placeholder="Fornavn og etternavn" required>
+                <select name="_subject" required>    
+                    <option value="Emne" disabled selected>Emne</option>
+                    <option value="Alarm">Alarm</option>
+                    <option value="Klage">Klage</option>
+                    <option value="Fest">Fest</option>
+                </select>
+                <textarea name="message" placeholder="Hva har du på tanken?" required></textarea>
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="submit" value="Send">
+            </form>
         </div>
         <div class="displayFlexMain">
             <h1 id="errand">Hva kan vi hjelpe deg med?</h1>
         </div>
         <section class="displayFlexMain">
             <ul id="containerOne">
-                <li><a href="#1"><h3>Boligalarm & smarthusløsninger</h3></a></li>
+                <li><a href="#1"><h3>Boligalarm</h3></a></li>
                 <li><a href="#3"><h3>Bedriftsalarm</h3></a></li>
                 <li><a href="#5"><h3>Kameraovervåkning</h3></a></li>
             </ul>
