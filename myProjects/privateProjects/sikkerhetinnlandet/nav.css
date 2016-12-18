@@ -97,7 +97,7 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #eee;
+    background-color: rgba(240, 240, 240, 0.96);
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
