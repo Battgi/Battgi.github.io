@@ -14,8 +14,8 @@
     <meta property="og:url" content="http://www.sikkerhetinnlandet.no/" />
     <meta property="og:site_name" content="Sikkerhet Innlandet" />
     <meta property="og:img" content="pictures/background/sikkerhetinnlandetbygg.jpg">
-    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
 </head>
@@ -25,7 +25,12 @@
             <div id="introduction">
                 <nav class="displayFlexHeader">
                     <a href="#" class="brand"></a>
-                    <button id="showMenuButton" class="menuButtonAnimation selected">
+                    <a href="#" class="desktopView currentlyActive">Hjem </a>
+                    <a href="#" class="desktopView">Kontakt </a>
+                    <a href="#" class="desktopView">Om oss </a>
+                    <a href="#" class="desktopView">Jobb </a>
+                    
+                    <button id="showMenuButton" class="menuButtonAnimation  mobileView">
                         <span></span>
                     </button>
                    
@@ -35,7 +40,7 @@
                  </div>
             </div>
         </div>
-        <nav id="mySidenav" class="sidenav">
+        <nav id="mySidenav" class="sidenav mobileView">
 
             <div class="displayFlexHeader">
                 <a href="#" class="brand"></a>
@@ -95,7 +100,7 @@
             </li>
             <li>
                 <ul class="footerFlex">
-                    <li id="copyright">&#169;Sikkerhet innlandet</li>
+                    <li id="copyright">&#169; Sikkerhet innlandet</li>
                 </ul>
             </li>
         </ul>

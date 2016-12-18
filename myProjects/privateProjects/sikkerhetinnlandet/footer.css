@@ -81,5 +81,10 @@ footer {
 
 /*DESKTOP*/
 @media (min-width: 501px){
-    
+    .displayFlexFooter > li {
+        flex-basis: 20%;
+    } 
+    #copyright {
+        font-size: 4em;
+    }
 }

@@ -90,7 +90,6 @@ section.displayFlexMain {
     color: rgb(150, 192, 206);
     text-shadow: 0 0 1px rgb(10, 10, 10), 0 0 2px black, -1px 1px black;
     font-size: 3em;
-
 }
 
 #containerOne li:nth-of-type(3) {
@@ -142,7 +141,15 @@ section.displayFlexMain {
     padding: 3.33em 0 3.33em 0;
 }
 
+
 /*DESKTOP*/
-@media (min-width: 501px){
-    
+
+@media (min-width: 501px) {
+    section.displayFlexMain {
+        flex-direction: row;
+    }
+    #containerOne li,
+    #containerTwo li {
+        height: 35em;
+    }
 }
