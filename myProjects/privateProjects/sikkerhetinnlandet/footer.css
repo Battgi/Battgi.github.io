@@ -11,7 +11,7 @@ footer {
 }
 
 
-.displayFlexFooter li{
+.displayFlexFooter > li{
     -ms-flex-preferred-size: 48%;
     flex-basis: 48%;
     margin: 0 0.5% 0 0.5%;
@@ -19,27 +19,64 @@ footer {
     background-position: center;
     height: 10em;
     background-repeat: no-repeat;
+    opacity: 0.7;
 }
 
-.displayFlexFooter li:nth-of-type(1){
+.displayFlexFooter > li:nth-of-type(1){
     margin-top: 1em;
     background-image: url(pictures/logo/hlf.gif);
 }
-.displayFlexFooter li:nth-of-type(2){
+.displayFlexFooter > li:nth-of-type(2){
     margin-top: 1em;
     background-image: url(pictures/logo/verisure_logo.png);
 }
-.displayFlexFooter li:nth-of-type(3){
+.displayFlexFooter > li:nth-of-type(3){
     background-image: url(pictures/logo/siemens.png);
 }
-.displayFlexFooter li:nth-of-type(4){
+.displayFlexFooter > li:nth-of-type(4){
     background-image: url(pictures/logo/United_Technologies.svg.png);
 }
-.displayFlexFooter li:nth-of-type(5){
+.displayFlexFooter > li:nth-of-type(5){
     background-image: url(pictures/logo/Vicon_Industries_Logo.png);
 }
-.displayFlexFooter li:nth-of-type(6){
+.displayFlexFooter > li:nth-of-type(6){
     background-image: url(pictures/logo/heraslogo.png);
+}
+.displayFlexFooter > li:nth-of-type(9){
+    -ms-flex-preferred-size: 95%;
+    flex-basis: 95%
+}
+
+.footerFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.leftFooter a, .rightFooter a{
+    color: rgb(150, 150, 150);
+    
+}
+
+.leftFooter, .rightFooter {
+    font-size: 1.9em;
+    height: 2em;
+    font-weight: 900;
+}
+
+#copyright {
+    margin-top: 1em;
+    font-size: 3em;
+    color: rgba(50, 50, 50, 0.9);
 }
 
 /*DESKTOP*/

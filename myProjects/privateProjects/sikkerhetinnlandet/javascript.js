@@ -18,3 +18,4 @@ function toggleMenuButton() {
         noScroll.classList.toggle('overflow');
     });
 };
+
