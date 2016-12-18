@@ -51,11 +51,10 @@ button {
 /*introduction*/
 
 #introduction {
-    background: url(pictures/background/securityPhone.jpg) no-repeat;
+    background: url(pictures/background/sec.jpg) no-repeat;
     background-size: cover;
     background-position: left;
     box-sizing: border-box;
-    padding: 1em;
     height: 36em;
 }
 
@@ -128,6 +127,8 @@ button {
 .desktopView {
     display: none;
 }
+
+
 /*DESKTOP*/
 
 @media (min-width: 601px) {
@@ -141,16 +142,27 @@ button {
         height: 50em;
         background-position: right;
     }
+    header div div#introduction .displayFlexHeader {
+        background-color: rgba(230, 230, 230, 0.8);
+    }
+    #introduction .brand {
+        height: 6em;
+        margin-left: 1em;
+    }
     #introduction .introDisc {
         margin-top: 24em;
     }
     #introduction a.desktopView {
         font-size: 2.4em;
         color: rgb(0, 0, 0);
-        text-shadow: 0 0 3px white;
         padding: 0.5em 2% 0 2%;
     }
     #introduction .displayFlexHeader .currentlyActive {
         color: rgb(242, 51, 43);
+        border-bottom: 5px solid red;
+    }
+    #introduction .displayFlexHeader a.desktopView:hover {
+        color: rgb(242, 51, 43);
+        border-bottom: 5px solid red;
     }
 }
