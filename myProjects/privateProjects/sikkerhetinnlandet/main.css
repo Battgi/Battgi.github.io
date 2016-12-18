@@ -157,7 +157,12 @@ section.displayFlexMain {
 
 @media (min-width: 551px) {
     #contactForm {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
@@ -165,6 +170,9 @@ section.displayFlexMain {
     }
     
     section.displayFlexMain {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
     #containerOne li:nth-of-type(1) {
