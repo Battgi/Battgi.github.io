@@ -7,9 +7,13 @@
 }
 
 #contactContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 #contactContainer > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;    
     margin: 1em;
 }
