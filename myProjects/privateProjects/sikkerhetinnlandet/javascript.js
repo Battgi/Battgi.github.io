@@ -6,7 +6,6 @@ function toggleMenuButton() {
     "use strict";
     let toggle = document.querySelector(".menuButtonAnimation"),
         sidenav = document.getElementById('mySidenav'),
-        brand = document.getElementsByClassName('brand')[0],
         noScroll = document.getElementsByClassName('noScroll')[0],
         introduction = document.getElementById('introduction');
 
@@ -14,7 +13,6 @@ function toggleMenuButton() {
         scroll(0, 0);
         this.classList.toggle("is-active");
         sidenav.classList.toggle('sidenavOpen');
-        brand.classList.toggle('removeBrand');
         noScroll.classList.toggle('overflow');
     });
 };

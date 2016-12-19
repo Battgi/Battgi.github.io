@@ -71,11 +71,6 @@ button {
     flex: 3;
 }
 
-.removeBrand {
-    z-index: -1;
-}
-
-
 /*side nav*/
 
 .sidenav {
@@ -197,4 +192,10 @@ button {
         padding: 0.5em 2% 0 2%;
     }
 
+}
+
+@media (min-width: 1400px) {
+    .desktopNav {
+        height: 7em;
+    }
 }
