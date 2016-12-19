@@ -149,6 +149,7 @@ button {
         -webkit-box-flex: 0.5;
         -ms-flex: 0.5;
         flex: 0.5;
+        padding: 0 0.3em 0 0.3em;
     }
     .desktopNav > a {
         color: black;
@@ -178,7 +179,8 @@ button {
         margin-left: 1em;
     }
     #introduction .introDisc {
-        margin-top: 27em;
+        margin-top: 12em;
+        font-size: 3.5em;
     }
     
     #introduction a.desktopView {
