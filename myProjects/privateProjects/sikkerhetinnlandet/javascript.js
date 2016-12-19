@@ -1,4 +1,6 @@
 window.onload = function () {
+    let contactForm = document.getElementById('contactForm');
+    contactForm.setAttribute('action', 'http://www.formspree.io/' + 'joaoepe' + '@' + 'outlook' + '.' + 'com');
     toggleMenuButton();
 }
 

@@ -39,7 +39,7 @@
                         <span></span>
                     </button>
                 </nav>
-                
+
                 <p class="introDisc">Alarm &middot; Kameraovervåkning &middot; Adgangskontroll &middot; Områdesikring</p>
             </div>
         </div>
@@ -78,10 +78,30 @@
             </ul>
         </section>
 
+
+        <div id="contactContainer">
+            <form method="POST" id="contactForm" class="desktopView" target="_blank">
+                <input type="email" name="_replyto" placeholder="Din epost@adresse.no" required>
+                <input type="text" name="name" placeholder="Ditt fornavn og etternavn" required>
+                <select name="_subject" required>
+                    <option value="" name="about" disabled selected>Velg hva det handler om</option>
+                    <option value="Alarm">Alarm</option>
+                    <option value="Klage">Klage</option>
+                    <option value="Fest">Fest</option>
+                </select>
+                <textarea name="message" placeholder="Max 250 ord" required></textarea>
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="submit" value="Send">
+            </form>
+            
+            <iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Kallerudlia 3, 2816 Gjøvik, &t=&z=15&ie=UTF8&iwloc=&output=embed" marginwidth="0"><a class="addmaps" href="http://www.map-embed.com/fr/"id="get-map-data" mce_href="http://maps.google.com/maps/api/js?sensor=false">map-embed.com</a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></iframe>
+        </div>
+
     </main>
 
     <footer>
         <ul class="displayFlexFooter">
+            <li></li>
             <li></li>
             <li></li>
             <li></li>
@@ -100,11 +120,6 @@
                     <li class="rightFooter"><a href="#">Facebook</a></li>
                     <li class="rightFooter"><a href="#">Twitter</a></li>
                     <li class="rightFooter"><a href="#">Youtube</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul class="footerFlex">
-                    <li id="copyright">&#169; Sikkerhet innlandet</li>
                 </ul>
             </li>
         </ul>
