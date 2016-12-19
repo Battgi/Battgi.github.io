@@ -157,7 +157,7 @@ section.displayFlexMain {
 
 /*DESKTOP*/
 
-@media (min-width: 551px) {
+@media (min-width: 701px) {
     section.displayFlexMain li{
         margin: 1em;
     }
