@@ -23,14 +23,18 @@
 <body class="noScroll">
     <header>
         <div>
+            <div>
+                <nav class="desktopView desktopNav">
+                    <a href="#" class="brand"></a>
+                    <a href="#" class="currentlyActive">Hjem</a>
+                    <a href="#" class="hoverMe">Kontakt</a>
+                    <a href="#" class="hoverMe">Om oss</a>
+                    <a href="#" class="hoverMe">Jobb</a>
+                </nav>
+            </div>
             <div id="introduction">
                 <nav class="displayFlexHeader">
-                    <a href="#" class="brand"></a>
-                    <a href="#" class="desktopView currentlyActive">Hjem</a>
-                    <a href="#" class="desktopView">Kontakt</a>
-                    <a href="#" class="desktopView">Om oss</a>
-                    <a href="#" class="desktopView">Jobb</a>
-
+                    <a href="#" class="brand mobileView"></a>
                     <button id="showMenuButton" class="menuButtonAnimation  mobileView">
                         <span></span>
                     </button>
@@ -62,7 +66,7 @@
             <form method="POST" id="contactForm" class="desktopView" target="_blank">
                 <input type="email" name="_replyto" placeholder="epost@adresse.no" required>
                 <input type="text" name="name" placeholder="Fornavn og etternavn" required>
-                <select name="_subject" required>    
+                <select name="_subject" required>
                     <option value="Emne" name="about" disabled selected>Emne</option>
                     <option value="Alarm">Alarm</option>
                     <option value="Klage">Klage</option>
@@ -88,6 +92,7 @@
                 <li><a href="#6"><h3>Service</h3></a></li>
             </ul>
         </section>
+
     </main>
 
     <footer>
