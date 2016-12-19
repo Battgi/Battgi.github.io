@@ -100,6 +100,11 @@ button {
     padding: 0;
 }
 
+.sidenav .displayFlexHeader .brand {
+    height: 2.5em;
+    margin-bottom: 2em;
+}
+
 .sidenav a {
     padding: 0.5em 0.5em 0.5em 1em;
     color: black;
@@ -171,16 +176,19 @@ button {
         margin-left: 1em;
     }
     #introduction {
-        height: 50em;
+        height: 55em;
         background-position: right;
+        background-image: url(pictures/background/desktopIntro.jpg);
     }
     #introduction .brand {
         height: 6em;
         margin-left: 1em;
     }
     #introduction .introDisc {
-        margin-top: 12em;
+        margin-top: 13em;
         font-size: 3.5em;
+        height: 3em;
+        background-color: rgba(50, 50, 50, 0.3)
     }
     
     #introduction a.desktopView {
