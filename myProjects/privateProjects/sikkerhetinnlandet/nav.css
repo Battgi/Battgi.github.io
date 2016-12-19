@@ -198,4 +198,7 @@ button {
     .desktopNav {
         height: 7em;
     }
+    .desktopNav > a {
+        padding: 0.5em 0 0 0;
+    }
 }
