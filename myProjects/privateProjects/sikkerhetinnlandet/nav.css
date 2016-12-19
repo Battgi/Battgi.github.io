@@ -136,6 +136,8 @@ button {
 @media (min-width: 551px) {
     
     .desktopView {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .mobileView {
