@@ -42,10 +42,7 @@ footer {
 .displayFlexFooter > li:nth-of-type(6){
     background-image: url(pictures/logo/heraslogo.png);
 }
-.displayFlexFooter > li:nth-of-type(9){
-    -ms-flex-preferred-size: 95%;
-    flex-basis: 95%
-}
+
 
 .footerFlex {
     display: -webkit-box;
@@ -69,7 +66,6 @@ footer {
 
 .leftFooter, .rightFooter {
     font-size: 1.9em;
-    height: 2em;
     font-weight: 900;
 }
 

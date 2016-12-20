@@ -27,8 +27,9 @@
 }
 
 #contactContainer #contactForm textarea {
-    min-height: 9.8em;
+    min-height: 9.1em;
     resize: none;
+    padding: 0.3em;
 }
 
 /*END OF GOOGLE MAPS AND CONTACT FORM*/
