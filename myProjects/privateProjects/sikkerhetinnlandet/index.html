@@ -28,7 +28,7 @@
                     <a href="#" class="brand"></a>
                     <a href="#" class="currentlyActive">Hjem</a>
                     <a href="#" class="hoverMe">Kontakt</a>
-                    <a href="#" class="hoverMe">Oss</a>
+                    <a href="#" class="hoverMe">Om oss</a>
                     <a href="#" class="hoverMe">Jobb</a>
                 </nav>
             </div>
@@ -49,7 +49,7 @@
                 <a href="#" class="brand"></a>
             </div>
 
-            <a href="#" class="currentlyActive">Hjem</a>
+            <a href="#">Produkter</a>
             <a href="#">Kontakt</a>
             <a href="#">Om oss</a>
             <a href="#">Jobb</a>
@@ -63,7 +63,7 @@
             </nav>
         </div>
         <div class="displayFlexMain">
-            <h1 id="errand">Hva kan vi hjelpe deg med?</h1>
+            <h1 class="errand">Hva kan vi hjelpe deg med?</h1>
         </div>
         <section class="displayFlexMain">
             <ul id="containerOne">
@@ -77,26 +77,33 @@
                 <li><a href="#6"><h3>Service</h3></a></li>
             </ul>
         </section>
-
-
+        
+        <div class="displayFlexMain">
+            <h1 class="errand">Ta kontakt!</h1>
+        </div>
+        
         <div id="contactContainer">
             <form method="POST" id="contactForm" target="_blank">
                 <input type="email" name="_replyto" placeholder="Din epost@adresse.no" required>
                 <input type="text" name="name" placeholder="Ditt fornavn og etternavn" required>
                 <select name="_subject" required>
-                    <option value="" name="about" disabled selected>Velg hva det handler om</option>
+                    <option value="" name="about" disabled selected>Velg hva det handler om:</option>
                     <option value="Alarm">Alarm</option>
                     <option value="Klage">Klage</option>
-                    <option value="Fest">Fest</option>
+                    <option value="Fest">Annet</option>
                 </select>
-                <textarea name="message" placeholder="Max 500 bokastaver" maxlength="500" required></textarea>
+                <textarea name="message" placeholder="Maks 500 bokastaver" maxlength="500" required></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
                 <input type="submit" value="Send">
             </form>
-            
-            <iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Kallerudlia 3, 2816 Gjøvik, &t=&z=15&ie=UTF8&iwloc=&output=embed" marginwidth="0"><a class="addmaps" href="http://www.map-embed.com/fr/"id="get-map-data" mce_href="http://maps.google.com/maps/api/js?sensor=false">map-embed.com</a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></iframe>
-        </div>
 
+            <iframe id="gMap" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Kallerudlia 3, 2816 Gjøvik, &t=&z=15&ie=UTF8&iwloc=&output=embed" marginwidth="0">
+                <a class="addmaps" href="http://www.map-embed.com/fr/" id="get-map-data" mce_href="http://maps.google.com/maps/api/js?sensor=false"></a>
+            </iframe>
+        </div>
+    <div class="displayFlexMain">
+            <h1 class="errand">Om oss</h1>
+        </div>
     </main>
 
     <footer>
@@ -107,23 +114,22 @@
             <li></li>
             <li></li>
             <li></li>
-            <li></li>
-            <li>
-                <ul class="footerFlex">
-                    <li class="leftFooter"><a href="#">Kontakt Oss</a></li>
-                    <li class="leftFooter"><a href="#">Vanlige spørsmål</a></li>
-                    <li class="leftFooter"><a href="#">Besøk oss</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul class="footerFlex">
-                    <li class="rightFooter"><a href="#">Facebook</a></li>
-                    <li class="rightFooter"><a href="#">Twitter</a></li>
-                    <li class="rightFooter"><a href="#">Youtube</a></li>
-                </ul>
-            </li>
+            <ul class="footerFlex">
+                <li><a href="#">Kontakt Oss</a></li>
+                <li><a href="#">Vanlige spørsmål</a></li>
+                <li><a href="#">Besøk oss</a></li>
+            </ul>
+
+
+            <ul class="footerFlex">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+
         </ul>
     </footer>
+
     <script src="javascript.js"></script>
 </body>
 

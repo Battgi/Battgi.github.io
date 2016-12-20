@@ -1,24 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /*GOOGLE MAPS AND CONTACT FORM*/
-#gmap_canvas img {
-    max-width: none!important;
-    background: none!important;
+#gMap {
+    height: 30em;
 }
 
 #contactContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
+
 #contactContainer > * {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1;    
-    margin: 1em;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0.5em;
 }
 
-#contactContainer #contactForm input, #contactContainer #contactForm select{
+#contactContainer #contactForm input,
+#contactContainer #contactForm select {
     border: none;
     outline: none;
     padding: 0.3em;
@@ -31,6 +43,20 @@
     resize: none;
     padding: 0.3em;
 }
+
+#contactContainer #contactForm input[type="submit"] {
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#contactContainer #contactForm input[type="submit"]:hover {
+    opacity: 0.6;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 
 /*END OF GOOGLE MAPS AND CONTACT FORM*/
 
@@ -56,7 +82,7 @@ main {
     letter-spacing: 0.1em;
 }
 
-.displayFlexMain #errand {
+.displayFlexMain .errand {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -179,35 +205,21 @@ section.displayFlexMain {
 #containerOne li a,
 #containerTwo li a {
     width: 100%;
-    background-color: rgba(50, 50, 50, 0.5);
-}
-
-#containerOne li a:hover,
-#containerTwo li a:hover {
-    width: 100%;
-    background-color: rgba(50, 50, 50, 0.0);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    cursor: pointer;
 }
 
 
 /*DESKTOP*/
 
 @media (min-width: 701px) {
+    #contactContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
     section.displayFlexMain li {
         margin: 1em;
-    }
-    #contactForm {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center;
-        margin: 0 auto;
-        padding: 1em;
     }
     section.displayFlexMain {
         -webkit-box-orient: horizontal;
@@ -253,6 +265,12 @@ section.displayFlexMain {
     }
     #containerOne li a,
     #containerTwo li a {
-        background-color: rgba(50, 50, 50, 0.3);
+        background-color: rgba(50, 50, 50, 0.5);
+    }
+    #containerOne li a:hover,
+    #containerTwo li a:hover {
+        background-color: rgba(50, 50, 50, 0.0);
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
     }
 }

@@ -1,5 +1,6 @@
 footer {
     background-color: rgb(60, 60, 60);
+    padding-top: 1em;
 }
 
 .displayFlexFooter {
@@ -10,41 +11,48 @@ footer {
     align-content: center;
 }
 
-
-.displayFlexFooter > li{
-    -ms-flex-preferred-size: 48%;
-    flex-basis: 48%;
-    margin: 0 0.5% 0 0.5%;
+.displayFlexFooter > li {
     background-size: contain;
     background-position: center;
-    height: 10em;
+    height: 7em;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+    margin: 1% 1% 1% 1%;
 }
 
-.displayFlexFooter > li:nth-of-type(1){
-    margin-top: 1em;
+.displayFlexFooter > li:nth-of-type(1) {
     background-image: url(pictures/logo/hlf.gif);
 }
-.displayFlexFooter > li:nth-of-type(2){
-    margin-top: 1em;
+
+.displayFlexFooter > li:nth-of-type(2) {
     background-image: url(pictures/logo/verisure_logo.png);
 }
-.displayFlexFooter > li:nth-of-type(3){
+
+.displayFlexFooter > li:nth-of-type(3) {
     background-image: url(pictures/logo/siemens.png);
 }
-.displayFlexFooter > li:nth-of-type(4){
+
+.displayFlexFooter > li:nth-of-type(4) {
     background-image: url(pictures/logo/United_Technologies.svg.png);
 }
-.displayFlexFooter > li:nth-of-type(5){
+
+.displayFlexFooter > li:nth-of-type(5) {
     background-image: url(pictures/logo/Vicon_Industries_Logo.png);
 }
-.displayFlexFooter > li:nth-of-type(6){
+
+.displayFlexFooter > li:nth-of-type(6) {
     background-image: url(pictures/logo/heraslogo.png);
 }
 
+.displayFlexFooter .footerFlex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
 
 .footerFlex {
+    padding-top: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -59,21 +67,20 @@ footer {
     align-content: center;
 }
 
-.leftFooter a, .rightFooter a{
-    color: rgb(150, 150, 150);
-    
-}
-
-.leftFooter, .rightFooter {
-    font-size: 1.9em;
-    font-weight: 900;
+.footerFlex > li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 2em;
+    padding: 0.3em;
 }
 
 
 /*DESKTOP*/
-@media (min-width: 701px){
+
+@media (min-width: 701px) {
     .displayFlexFooter > li {
-        -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-    } 
+        -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    }
 }
