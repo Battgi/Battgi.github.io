@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /*GOOGLE MAPS AND CONTACT FORM*/
+
 #gMap {
     height: 50em;
 }
@@ -64,6 +65,61 @@
     opacity: 0.6;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.slideThree {
+    width: 8em;
+    height: 2.6em;
+    background: gray;
+
+    position: relative;
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.slideThree:after {
+    content: 'NEI';
+    font: 12px/26px Arial, sans-serif;
+    color: #000;
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, .15);
+}
+
+.slideThree:before {
+    content: 'JA';
+    font: 1.2em/2.6em Arial, sans-serif;
+    color: white;
+    position: absolute;
+    left: 1em;
+    font-weight: bold;
+}
+
+.slideThree label {
+    display: block;
+    width: 3.4em;
+    height: 2em;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0.3em;
+    left: 0.3em;
+    z-index: 1;
+    background: rgb(200, 200, 200);
+}
+
+.slideThree input[type=checkbox]:checked + label {
+    left: 4.3em;
 }
 
 
@@ -222,11 +278,11 @@ section.displayFlexMain {
 
 @media (min-width: 701px) {
     #contactContainer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
     section.displayFlexMain li {
         margin: 1em;
     }

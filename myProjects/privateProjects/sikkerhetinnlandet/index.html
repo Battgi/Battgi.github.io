@@ -61,7 +61,7 @@
                 <a href="#123">KONTAKT OSS</a>
             </nav>
         </div>
-        <a name="produkter"/>
+        <a name="produkter" />
         <div class="displayFlexMain">
             <h1 class="errand">Hva kan vi hjelpe deg med?</h1>
         </div>
@@ -77,7 +77,7 @@
                 <li><a href="#6"><h3>Service</h3></a></li>
             </ul>
         </section>
-        <a name="kontakt"/>
+        <a name="kontakt" />
         <div class="displayFlexMain">
             <h1 class="errand">Ta kontakt!</h1>
         </div>
@@ -86,11 +86,11 @@
             <form method="POST" id="contactForm" target="_blank">
                 <input type="email" name="_replyto" placeholder="Din epost@adresse.no" required>
                 <input type="text" name="name" placeholder="Ditt fornavn og etternavn" required>
-                <input type="tel" name="telefonnummer" placeholder="Ditt telefonnummer" required>
-                <label for="overPhone">
-                   Vil du bli kontaktet over telefon?
-                    <input type="checkbox" name="overPhone" value="Ring meg">
-                </label>
+                <input type="tel" name="telefonnummer" placeholder="Ditt telefonnummer" maxlength="10" required>
+                <div class="slideThree">
+                    <input type="checkbox" value="callMe" id="slideThree" name="check" />
+                    <label for="slideThree" value="Ja"></label>
+                </div>
                 <select name="_subject" required>
                     <option value="" name="about" disabled selected>Velg hva det handler om:</option>
                     <option value="Alarm">Alarm</option>
