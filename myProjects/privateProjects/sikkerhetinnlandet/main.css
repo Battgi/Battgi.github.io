@@ -33,6 +33,7 @@
 #contactContainer #contactForm select {
     -webkit-appearance: none;
     -moz-appearance: none;
+    background-color: white;
     border: none;
     outline: none;
     padding: 0.3em;
