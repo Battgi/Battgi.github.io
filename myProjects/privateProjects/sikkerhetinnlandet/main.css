@@ -6,8 +6,6 @@
 }
 
 #contactContainer {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -33,6 +31,8 @@
 
 #contactContainer #contactForm input,
 #contactContainer #contactForm select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     border: none;
     outline: none;
     padding: 0.3em;
@@ -41,12 +41,16 @@
 }
 
 #contactContainer #contactForm textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     min-height: 9.1em;
     resize: none;
     padding: 0.3em;
 }
 
 #contactContainer #contactForm input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-color: red;
     color: white;
     font-weight: 900;
@@ -54,6 +58,8 @@
 }
 
 #contactContainer #contactForm input[type="submit"]:hover {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     opacity: 0.6;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
