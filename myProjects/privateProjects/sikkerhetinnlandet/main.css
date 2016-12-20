@@ -2,7 +2,7 @@
 
 /*GOOGLE MAPS AND CONTACT FORM*/
 #gMap {
-    height: 30em;
+    height: 50em;
 }
 
 #contactContainer {
@@ -29,8 +29,8 @@
     margin: 0.5em;
 }
 
-#contactContainer #contactForm input,
-#contactContainer #contactForm select {
+#contactContainer #contactForm >input,
+#contactContainer #contactForm >select {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: white;
