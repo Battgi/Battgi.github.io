@@ -3,7 +3,7 @@
 /*GOOGLE MAPS AND CONTACT FORM*/
 
 #gMap {
-    height: 50em;
+    height: 37.5em;
 }
 
 #contactContainer {
@@ -75,7 +75,6 @@ input[type=checkbox] {
     width: 8em;
     height: 2.6em;
     background: gray;
-
     position: relative;
     -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
     -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
@@ -121,6 +120,20 @@ input[type=checkbox] {
 .slideThree input[type=checkbox]:checked + label {
     left: 4.3em;
 }
+
+#checkboxText {
+    background-color: white;
+    text-align: left;
+    flex-basis: 70%;
+    padding: 0.3em 0 0.3em 0.1em;
+    font-size: 1.5em;
+    color: gray;
+}
+.checker > div {
+    margin: 0 auto;
+}
+
+
 
 
 /*END OF GOOGLE MAPS AND CONTACT FORM*/
