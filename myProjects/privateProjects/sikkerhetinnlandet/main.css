@@ -76,8 +76,6 @@ input[type=checkbox] {
     height: 2.6em;
     background: gray;
     position: relative;
-    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
@@ -105,9 +103,6 @@ input[type=checkbox] {
     width: 3.4em;
     height: 2em;
     -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    -ms-transition: all .4s ease;
     transition: all .4s ease;
     cursor: pointer;
     position: absolute;
@@ -124,6 +119,7 @@ input[type=checkbox] {
 #checkboxText {
     background-color: white;
     text-align: left;
+    -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
     padding: 0.3em 0 0.3em 0.1em;
     font-size: 1.5em;
