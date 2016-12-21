@@ -107,14 +107,15 @@ input[type=checkbox] {
     background: gray;
     position: relative;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    border-radius: 5em;
 }
 
 .slideThree:after {
     content: 'NEI';
-    font: 12px/26px Arial, sans-serif;
+    font: 1.2em/2.6em Arial, sans-serif;
     color: #000;
     position: absolute;
-    right: 10px;
+    right: 1em;
     font-weight: bold;
     text-shadow: 1px 1px 0px rgba(255, 255, 255, .15);
 }
@@ -129,6 +130,7 @@ input[type=checkbox] {
 }
 
 .slideThree label {
+    border-radius: 5em;
     display: block;
     width: 3.4em;
     height: 2em;
@@ -145,3 +147,8 @@ input[type=checkbox] {
 .slideThree input[type=checkbox]:checked + label {
     left: 4.3em;
 }
+
+
+
+/*FONTAWESOME*/
+
