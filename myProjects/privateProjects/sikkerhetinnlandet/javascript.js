@@ -18,3 +18,7 @@ function toggleMenuButton() {
         noScroll.classList.toggle('overflow');
     });
 };
+
+
+
+/*SMOOTH SCROLL*/
