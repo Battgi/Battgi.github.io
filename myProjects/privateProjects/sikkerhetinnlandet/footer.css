@@ -75,6 +75,22 @@ footer {
     padding: 0.3em;
 }
 
+.footerSplit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+} 
+.footerSplit * {
+    margin: 0.3em;
+    text-align-last: center;
+    color: rgb(80,80,80);
+}
+.copyright {
+    text-align-last: center;
+    font-size: 4em;
+    color: rgb(50, 50, 50);
+}
 
 /*DESKTOP*/
 
