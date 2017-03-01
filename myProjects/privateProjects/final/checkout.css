@@ -23,13 +23,13 @@ header {
 
 .headers {
     color: #c55c58;
+    text-shadow: none;
 }
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     margin-top: 3em;
-    margin-left: 1em;
     font-size: 2em;
     color: white;
     text-shadow: 0 0 0.1em black, 0 0 0.2em black, 0 0 0.3em black;
@@ -51,7 +51,6 @@ tr:nth-child(even) {
 .registration {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
 .registration * {
@@ -87,7 +86,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 690px) and (max-width: 900px) {
     
     table {
-        width: 50%;
+        width: 80%;
     }
     .registration > input {
         flex-basis: 50%;
@@ -99,7 +98,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 901px) {
  
     table {
-        width: 50%;
+        width: 80%;
     }
     .registration > input {
         flex-basis: 50%;
