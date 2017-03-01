@@ -1,5 +1,5 @@
 body {
-    background-color: #E9E9E9;
+    background-color: rgb(230, 230, 230);
 }
 
 .title {
@@ -28,8 +28,9 @@ body {
     border: none;
     padding: 0.2em;
     font-size: 2em;
+    color: white;
     text-align: center;
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(47, 55, 76, 0.9);
     flex-basis: 80%;
     transition: 0.5s;
 }
@@ -42,7 +43,7 @@ body {
 #filter input:focus,
 .slide button:hover,
 .slide button:focus {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(47, 55, 76, 0.7)
 }
 
 #filter button,
@@ -82,7 +83,7 @@ body {
 
 .container {
     height: 0;
-    background-color: rgba(200, 200, 200, 0.6);
+    background-color: rgba(47, 55, 76, 1);
     overflow-x: scroll;
     transition: 2s;
 }
@@ -99,7 +100,7 @@ body {
     min-width: 30em;
     margin: 0.5%;
     padding: 0.5%;
-    background-color: rgba(57, 65, 86, 0.2);
+    background-color: rgba(230, 230, 230, 0.5);
     -webkit-animation: fadein 1s;
     animation: fadein 1s;
     overflow-y: scroll;
@@ -135,7 +136,7 @@ body {
     color: white;
     font-weight: 800;
     cursor: pointer;
-    background-color: rgb(80, 30, 30);
+    background-color: #c55c58;
 }
 
 .orderBooksButton {
@@ -150,7 +151,7 @@ body {
     color: white;
     font-weight: 800;
     cursor: pointer;
-    background-color: rgb(80, 30, 30);
+    background-color: #c55c58;
     border: 0.1em solid rgb(180, 180, 180);
 }
 .orderBooksButton a {
@@ -165,9 +166,9 @@ body {
 #authorTwoContainer > li > img,
 #authorThreeContainer > li > img,
 #authorFourContainer > li > img {
-    border: 0.5em solid rgba(0, 0, 0, 1);
+    border: 0.5em solid rgba(0, 0, 0, 0.3);
 }
-
+    
 #container > li.notAvailable > a,
 #authorOneContainer > li.notAvailable > a,
 #authorTwoContainer > li.notAvailable > a,
@@ -227,6 +228,7 @@ body {
     text-shadow: 0 0 0.1em black;
     font-size: 2em;
 }
+
 
 
 /*previewer popup*/
