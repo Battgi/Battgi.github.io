@@ -22,9 +22,7 @@ main li {
     text-shadow: 0 0 0.01em black;
 }
 
-main li:hover {
-    background-color: rgba(50, 50, 50, 0.3);
-}
+
 .answer {
     border-bottom: 0.1em solid black;
     margin: 1em 0 1em 0;
