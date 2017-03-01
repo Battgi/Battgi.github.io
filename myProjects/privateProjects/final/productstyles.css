@@ -3,8 +3,7 @@ body {
 }
 
 header {
-        background-color:rgba(47, 55, 76, 0.9);
-
+    background-color: rgba(47, 55, 76, 0.9);
 }
 
 .title {
@@ -159,9 +158,11 @@ header {
     background-color: #c55c58;
     border: 0.1em solid rgb(180, 180, 180);
 }
+
 .orderBooksButton a {
     color: white;
 }
+
 .orderBooksButtonDisplay {
     visibility: visible;
 }
@@ -173,7 +174,7 @@ header {
 #authorFourContainer > li > img {
     border: 0.5em solid rgba(0, 0, 0, 0.3);
 }
-    
+
 #container > li.notAvailable > a,
 #authorOneContainer > li.notAvailable > a,
 #authorTwoContainer > li.notAvailable > a,
@@ -233,7 +234,6 @@ header {
     text-shadow: 0 0 0.1em black;
     font-size: 2em;
 }
-
 
 
 /*previewer popup*/
