@@ -170,12 +170,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidenav > ul > li {
-    margin-top: 2em;
+    margin-top: 1.5em;
     flex-basis: 80%;
     text-align: center;
     font-size: 2.4em;
     font-weight: 800;
-    padding: 1.5em;
+    padding: 1.2em;
 }
 
 .sidenav > ul > li > a {
