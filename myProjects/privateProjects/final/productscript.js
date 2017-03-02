@@ -74,6 +74,7 @@ function initialize() {
     viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
 }
 //LOAD BEFORE START/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// -> AJAX CALL SYNC
 (function () {
     currentElement = authorOneElement;
     inputType = "inauthor=";
@@ -101,20 +102,20 @@ function bookReq() {
             parsedBookData = JSON.parse(xhr.responseText);
             for (let i = 0; i < parsedBookData.items.length; i++) {
                 let book = parsedBookData.items[i];
-                filter.findImage(book.volumeInfo);
-                filter.findBuy(book);
-                filter.findIdentifier(book.volumeInfo);
-                filter.findSubtitle(book.volumeInfo.subtitle);
-                filter.findDescription(book.volumeInfo.description)
-                addElement(book.volumeInfo.title, currentSubtitle, currentImage, currentBuy, currentDescription, currentElement);
+                filter.findImage(book.volumeInfo); //finds thumbnail
+                filter.findBuy(book); //checks availability
+                filter.findIdentifier(book.volumeInfo); //checks for unique id
+                filter.findSubtitle(book.volumeInfo.subtitle); //prints out subtitle if available
+                filter.findDescription(book.volumeInfo.description) //looks for description
+                addElement(book.volumeInfo.title, currentSubtitle, currentImage, currentBuy, currentDescription, currentElement); //creates the list item
                 if (ready) {
                     titlesUser.push(book.volumeInfo.title);
                     userIdentifiers.push(currentIdentifier);
-                }
+                } // -> This applies when the user search
                 else {
                     titles.push(book.volumeInfo.title);
                     identifiers.push(currentIdentifier);
-                }
+                } //-> This applies when it runs sync
             }
             if (ready) {
                 userInfo();
@@ -130,15 +131,18 @@ function bookReq() {
     xhr.send(null);
 }
 ///BUTTONS FOR EACH SEARCH RESAULT////////////////////////////////////////////////////////////////////////////////////////////////
+// -> This info get printed out on the sync-call
 function info() {
     let viewDescriptionButton = document.getElementsByClassName('viewDescriptionButton')
         , previewButton = document.getElementsByClassName('previewButton')
         , addToCartButton = document.getElementsByClassName('addToCartButton');
+    // -> Toggle the description
     for (let i = 0; i < viewDescriptionButton.length; i++) {
         viewDescriptionButton[i].addEventListener('click', () => {
             document.getElementsByClassName('viewDescriptionContent')[i].classList.toggle('viewDescriptionContentDisplayed');
         });
     }
+    // -> Toggle preview book 
     for (let i = 0; i < previewButton.length; i++) {
         previewButton[i].addEventListener('click', () => {
             initialize();
@@ -146,6 +150,7 @@ function info() {
             document.getElementsByClassName('previewerContainer')[0].classList.toggle('hidden');
         });
     }
+    //-> Adds clicked book to the cart
     for (let i = 0; i < addToCartButton.length; i++) {
         addToCartButton[i].addEventListener('click', () => {
             document.getElementsByClassName('orderBooksButton')[0].classList.add('orderBooksButtonDisplay');
@@ -156,7 +161,8 @@ function info() {
         });
     }
 }
-
+// This get printed out on the async call (looks above as refrence)
+// ->Changed variables to fit user container
 function userInfo() {
     let viewDescriptionButtonUser = document.getElementsByClassName('viewDescriptionButtonUser')
         , previewButtonUser = document.getElementsByClassName('previewButtonUser')
@@ -189,6 +195,7 @@ let submitButton = document.getElementById('submitButton')
 submitButton.addEventListener('click', () => {
     userSubmit();
 });
+//-> This makes is possible to hit enter to search
 userInput.addEventListener('keypress', (e) => {
     let keyCode = e.keyCode || e.which;
     console.log(keyCode);
@@ -196,7 +203,7 @@ userInput.addEventListener('keypress', (e) => {
         userSubmit();
     }
 });
-
+//-> Executes the search
 function userSubmit() {
     //on click we reset everything
     userIdentifiers = [];
@@ -311,7 +318,8 @@ previous.addEventListener('click', () => {
     sliderFunctions.pauseSlideshow();
     sliderFunctions.previousSlide();
 });
-//DISPLAY CORRECT NAMES FROM THE CMS CONSOLE
+//DISPLAY CORRECT NAMES FROM THE CMS CONSOLE 
+// -> Gets data from the localStorage
 let previewAuthorOne = document.getElementById('previewAuthorOne')
     , previewAuthorTwo = document.getElementById('previewAuthorTwo')
     , previewAuthorThree = document.getElementById('previewAuthorThree')

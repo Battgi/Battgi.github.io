@@ -58,7 +58,7 @@ function userSendEmail() {
     $('#user-send').addClass('disabled');
     userSendMessage({
         'To': $('#user-email').val()
-        , 'Subject': 'Din bokning'
+        , 'Subject': 'Newsletter'
     }, 'You signed up with this mail, ' + $('#user-email').val() + ', for newsletter!', composeTidy);
     return false;
 }
