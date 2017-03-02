@@ -198,7 +198,6 @@ submitButton.addEventListener('click', () => {
 //-> This makes is possible to hit enter to search
 userInput.addEventListener('keypress', (e) => {
     let keyCode = e.keyCode || e.which;
-    console.log(keyCode);
     if (keyCode == '13') {
         userSubmit();
     }
