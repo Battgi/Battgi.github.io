@@ -66,14 +66,13 @@ input[type="submit"]:hover {
 header > ul > li {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
-    height: 10vh;
     padding: 0 0.5em 0 0.5em;
 }
 
 header > ul > li > a {
     display: block;
     width: 100%;
-    line-height: 10vh;
+    line-height: 3.35em;
 }
 
 header > ul > li:nth-child(n + 2) {
@@ -326,6 +325,9 @@ i:hover {
         -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
     }
+    header > ul > li > a {
+    line-height: 10vh;
+}
 }
 
 
