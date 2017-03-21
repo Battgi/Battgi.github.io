@@ -147,7 +147,6 @@ main > div {
     overflow-y: scroll;
 }
 
-
 main > div::-webkit-scrollbar {
     width: 0.7em;
 }
@@ -169,12 +168,12 @@ main > div::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
-
 #pThree > div > input {
     width: 70%;
     margin-bottom: 1em;
     text-align: center;
 }
+
 .subtitle {
     margin-bottom: 1em;
 }
@@ -283,7 +282,7 @@ main > div::-webkit-scrollbar-thumb {
 }
 
 .active {
-    height: 90vh;
+    height: 90%;
 }
 
 .displayNone {
@@ -326,8 +325,8 @@ i:hover {
         flex-basis: 47%;
     }
     header > ul > li > a {
-    line-height: 10vh;
-}
+        line-height: 10.1vh;
+    }
 }
 
 
