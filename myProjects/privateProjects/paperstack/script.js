@@ -140,7 +140,7 @@ function createElement(res) {
         if (res.data) {
             bookContainer.children[reverseIndex].addEventListener('focusout', () => {
                 let newTitle = document.getElementsByClassName('changeTitle')[reverseIndex].innerHTML
-                    , newAuthor = document.getElementsByClassName('changeAuthor')[reverseIndex].innerHTML;
+                    , newAuthor = document.getElementsByClassName('changeAuthor')[reverseIndex].innerHTML,
                 currentUserMessage = `<span class="successUserMessage">The title is now "${newTitle}" with the author "${newAuthor}"</span>`;
                 if (newTitle != '' || newAuthor != '') apiRequest(apiSelect.database.url + `op=update&id=${res.data[i].id}&title=${newTitle}&author=${newAuthor}&key=${sessionStorage.getItem('userKey')}`)
             });
